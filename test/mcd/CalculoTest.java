@@ -17,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author oracle
  */
-public class MCDTest {
+public class CalculoTest {
     
-    public MCDTest() {
+    public CalculoTest() {
     }
     
     @BeforeClass
@@ -39,15 +39,19 @@ public class MCDTest {
     }
 
     /**
-     * Test of main method, of class MCD.
+     * Test of obtenerMCD method, of class Calculo.
      */
     @Test
-    public void testMain() throws Exception {
-        System.out.println("main");
-        String[] args = null;
-        MCD.main(args);
+    public void testObtenerMCD() {
+        System.out.println("obtenerMCD");
+        int num1 = 0;
+        int num2 = 0;
+        Calculo instance = new Calculo();
+        int expResult = 0;
+        int result = instance.obtenerMCD(num1, num2);
+        assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
