@@ -13,7 +13,7 @@ public class Calculo {
 
     private int numero1;
     private int numero2;
-    private String mensajeResultado = "";
+    static String mensajeResultado = "";
 
     public Calculo() {
     }
@@ -54,7 +54,7 @@ public class Calculo {
     }
 
     //método para calcular el MCD
-    public int obtenerMCD(int num1, int num2) {
+    static int obtenerMCD(int num1, int num2) {
         int resto;
         int numDiv1 = num1;
         int numDiv2 = num2;

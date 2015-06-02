@@ -46,10 +46,30 @@ public class CalculoTest {
         System.out.println("obtenerMCD");
         int num1 = 6;
         int num2 = 4;
-        Calculo instance = new Calculo();
+        Calculo cal = new Calculo();
         int expResult = 2;
-        int result = instance.obtenerMCD(num1, num2);
+        int result = cal.obtenerMCD(num1, num2);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
+        System.out.println("obtenerMCD");
+        int num3 = 10;
+        int num4 = 5;
+        Calculo cal2 = new Calculo();
+        int expResult2 = 5;
+        int result2 = cal2.obtenerMCD(num3, num4);
+        assertEquals(expResult2, result2);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        
+        System.out.println("obtenerMCD");
+        int num5 = 10;
+        int num6 = 50;
+        Calculo cal3 = new Calculo();
+        int expResult3 = 10;
+        int result3 = cal3.obtenerMCD(num5, num6);
+        assertEquals(expResult3, result3);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
